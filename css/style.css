@@ -48,6 +48,17 @@ img{
     width: 95%;
     margin: 0 auto;
 }
+.btn{
+    background-color: var(--white);
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    transition: background-color .3s;
+}
+.btn:hover{
+    background-color: var(--gray);
+    color: var(--white);
+}
 
 /* Header */
 .header{
@@ -73,7 +84,7 @@ img{
 }
 .logo h1{
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;    
 }
 @media (min-width: 768px){  
@@ -154,3 +165,95 @@ img{
         font-size: 4.8rem;
     }
 }
+
+/* About-us */
+.about-us{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-top: 5rem;
+}
+@media (min-width: 992px){
+    .about-us{
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+.site-about{
+    background-color: var(--white);
+}
+@media (min-width: 992px){  
+    .site-about{
+        padding: 1rem;
+        grid-column: 2 / 4;
+    }
+}
+
+/* Main */
+.title-main{
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+@media (min-width: 768px){
+    .title-main{
+        font-size: 5.8rem;
+    }
+}
+.model{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 4rem;
+}
+.model:last-of-type{
+    margin-bottom: 0;
+}
+@media (min-width: 768px){
+    .model{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.model-site{
+    padding: 5rem;
+    background-color: var(--white);
+}
+.basic{
+    background-image: url(../img/modelo_basico.jpg);
+}
+@media (min-width: 768px){
+    .basic .model-site{
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+    .basic{
+        background-position: top right;
+    }
+}
+.premier{
+    background-image: url(../img/modelo_premier.jpg);
+}
+@media (min-width: 768px){
+    .premier .model-site{
+        padding: 2rem;
+        grid-column: 2 / 3;
+    }
+    .premier{
+        background-position: top left;
+    }
+}
+.elite{
+    background-image: url(../img/modelo_elite.jpg);
+}
+@media (min-width: 768px){
+    .elite .model-site{
+        padding: 2rem 2rem 2rem 0;
+    }
+    .elite{
+        background-position: top right;
+    }
+}
+
+/* Galería */
