@@ -307,12 +307,11 @@ img{
 
 /* Footer */
 .footer{
-    margin-top: 5rem;
     background-image: url(../img/footer_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 40rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
